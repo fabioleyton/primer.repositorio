@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software Control Manejo Inventarios</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles2.css">
+</head>
+
+<body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #141414;">
+    <div class="container">
+      <!-- Logo en la barra de navegación -->
+      <a class="navbar-brand" href="#">
+        <img src="img/logo1.png" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <!-- Enlaces a las nuevas páginas 
+          <li class="nav-item">
+            <a class="nav-link" href="productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="informes.html">Informes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="facturacion.html">Facturación</a>
+          </li>-->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="containerprincipal">
+    <div class="form-group">
+      <input id="usuario" type="text" class="form-control" name="username" placeholder="usuario">
+      <br>
+      <input id="contraseña" type="password" class="form-control" name="password" placeholder="contraseña">
+      <br>
+      <div class="button-container">
+        <button id="boton" class="boton" onclick="verificarLogin()">Iniciar sesión</button>
+        <br>
+        <a href="registro.html" class="boton">Registrarse</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Encabezado de la página -->
+  <header class="jumbotron jumbotron-fluid">
+    <div class="container text-center">
+      <div class="section1">
+        <h1 class="display-4">Control y Manejo de Inventarios</h1>
+        <p class="lead">
+        <h2>¡Controla, optimiza y potencia tu inventario con nuestro revolucionario software de gestión!</h2>
+        <p>Nuestro software de control y manejo de inventarios es la solución definitiva para empresas que buscan una
+          gestión logística impecable y una rentabilidad sin igual. Con una interfaz gráfica intuitiva y fácil de
+          usar, podrás registrar nuevos productos, seguir movimientos, generar alertas sobre stock mínimo y mucho
+          más.</p>
+        <p>Imagina tener el poder de saber en tiempo real qué productos están disponibles, cuándo vencen las
+          garantías, y obtener reportes precisos con solo unos clics. Además, nuestro software se adapta a tus
+          necesidades, desde pequeños inventarios hasta grandes empresas, brindando el mismo nivel de seguridad y
+          eficiencia en cada caso.</p>
+        <p>¡No te quedes atrás en el competitivo mundo del comercio! Con nuestro software, automatiza tus procesos y
+          agiliza tu empresa de forma ordenada y eficaz. Olvídate de preocuparte por caídas masivas o errores,
+          nuestro sistema es estable y compatible con diferentes sistemas operativos y dispositivos.</p>
+        <p>¿Quieres tener el control total de tu inventario con facilidad y profesionalismo? ¡Únete a nosotros y
+          experimenta la diferencia que nuestro software puede hacer en tu negocio!</p>
+        </p>
+      </div>
+      <img src="img/5.png" class="rounded" alt="...">
+    </div>
+  </header>
+
+  <section class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="section2">
+          <h2>Características destacadas</h2>
+          <ul>
+            <li>Control en tiempo real de inventario</li>
+            <li>Seguimiento de movimientos de inventario</li>
+            <li>Generación de reportes y análisis</li>
+            <li>Integración con sistemas de punto de venta</li>
+            <li>Interfaz Intuitiva</li>
+            <li>Reportes en Tiempo Real</li>
+            <li>Seguridad Garantizada</li>
+            <li>Automatización Eficiente</li>
+            <li>Soporte y Atención al Cliente:</li>
+            <li>Código Único por Producto</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="section2">
+          <h2>¿Qué vendemos?</h2>
+          <p>En nuestra empresa, ofrecemos un software de control y manejo de inventarios de vanguardia. Nuestra
+            solución tecnológica está diseñada para facilitar la gestión y seguimiento de los productos disponibles en
+            el inventario de cualquier tipo de empresa. Con una interfaz intuitiva y personalizable, nuestro software
+            permite a los usuarios registrar nuevos productos, realizar movimientos de entrada y salida, generar alertas
+            estratégicas, y obtener reportes en tiempo real.</p>
+          <p>Destacamos por brindar una experiencia excepcional a nuestros clientes, asegurando la seguridad de sus
+            datos y ofreciendo un servicio de soporte y atención al cliente de primera clase. Nuestro software es
+            compatible con diversos sistemas operativos y dispositivos, lo que permite a nuestros clientes acceder a su
+            inventario desde cualquier lugar y en cualquier momento.</p>
+          <p>Ya sea que gestionen pequeños inventarios o grandes empresas, nuestro software se adapta a las necesidades
+            específicas de cada cliente, garantizando una optimización de sus procesos logísticos y una mayor eficiencia
+            en su operación. Con nuestro software de control y manejo de inventarios, ayudamos a las empresas a tomar
+            decisiones acertadas, automatizar tareas, mejorar la rentabilidad y alcanzar el éxito en el competitivo
+            mundo
+            del comercio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="text-center">
+    <img src="img/4.png" class="rounded" alt="...">
+    <img src="img/logo1.png" class="rounded" alt="...">
+  </div>
+
+  <a href="https://api.whatsapp.com/send?phone=573118068358&text=Hola%20quiero%20recibir%20m%C3%A1s%20informaci%C3%B3n.%20Gracias."
+    target="_blank" id="whatsapp-button">
+    <img src="img/wt.png" alt="Contactar por WhatsApp" id="whatsapp-icon">
+  </a>
+
+  <!-- Pie de página -->
+  <footer class="bg-dark text-light text-center py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Información de contacto</h4>
+          <p>faavendano0@soy.sena.edu.co</p>
+          <p>Teléfono: (+57) 311 806 8358</p>
+          <p>Dirección: calle 100 carrera 100 # 75 Bogota</p>
+        </div>
+        <div class="col-md-6">
+          <h4>Síguenos en redes sociales</h4>
+          <div>
+            <!-- Agrega aquí los enlaces a tus redes sociales -->
+            <a href="https://www.facebook.com/betoleyton8/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/betoleyton8/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCpIEnC6i4WG1c17SLtK7Yfw" target="_blank"><i
+                class="fab fa-youtube"></i></a>
+          </div>
+          <!-- Logo en la barra de navegación -->
+          <a class="navbar-brand" href="#">
+            <img src="img/logo1.png" alt="Logo">
+          </a>
+        </div>
+      </div>
+      <p>Derechos de autor © 2023 - FABIO AVENDAÑO</p>
+    </div>
+  </footer>
+
+  <script>
+    // Este es el login funcional del boton iniciar sesion
+    function verificarLogin() {
+      const usuario = document.getElementById('usuario').value;
+      const contraseña = document.getElementById('contraseña').value;
+
+      if (usuario && contraseña) {
+        // Si se han ingresado usuario y contraseña, redirigir a la página de productos
+        window.location.href = 'productos.html';
+      } else {
+        // Si no se han ingresado ambos, mostrar un mensaje
+        alert('No has iniciado sesión. Por favor, ingresa usuario y contraseña.');
+      }
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
